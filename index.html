@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto%20Slab:700|Roboto%20Slab:400');
+
+    body {
+      font-family: 'Roboto Slab';
+      font-weight: 400;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Roboto Slab';
+      font-weight: 700;
+    }
+
+    html {
+      font-size: 100%;
+    }
+
+    /* 16px */
+
+    h1 {
+      font-size: 4.210rem;
+      /* 67.36px */
+    }
+
+    h2 {
+      font-size: 3.158rem;
+      /* 50.56px */
+    }
+
+    h3 {
+      font-size: 2.369rem;
+      /* 37.92px */
+    }
+
+    h4 {
+      font-size: 1.777rem;
+      /* 28.48px */
+    }
+
+    h5 {
+      font-size: 1.333rem;
+      /* 21.28px */
+    }
+
+    small {
+      font-size: 0.750rem;
+      /* 12px */
+    }
+
+    :root {
+      --text: #0b0d0e;
+      --background: #f7f8f9;
+      --primary: #67869e;
+      --secondary: #a1b9ca;
+      --accent: #7ea4c0;
+
+
+    }
+
+    .shadow-idk:hover {
+      box-shadow:
+        1.8px 2.8px 3.9px rgba(0, 0, 0, 0.38),
+        4.4px 6.7px 9.4px rgba(0, 0, 0, 0.273),
+        8.3px 12.5px 17.7px rgba(0, 0, 0, 0.227),
+        14.7px 22.3px 31.5px rgba(0, 0, 0, 0.19),
+        27.6px 41.8px 58.9px rgba(0, 0, 0, 0.153),
+        66px 100px 141px rgba(0, 0, 0, 0.107);
+    }
+  </style>
+</head>
+
+<body class="bg-[var(--background)]">
+
+  <!-- navbar section -->
+  <section class="bg-[url('1.png')] bg-cover bg-no-repeat h-screen text-[var(--background)]">
+    <nav class=" border-gray-200 dark:bg-white">
+      <div class="max-w-screen-xl flex flex-wrap items-center  justify-between mx-auto p-4">
+
+        <span class="self-center text-4xl font-semibold whitespace-nowrap">Aman</span>
+        </a>
+
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-12 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  text-2xl ">
+            <li>
+              <a href="#" class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent md:p-0 "
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary)] md:p-0 ">About</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary)] md:p-0 ">Services</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary)] md:p-0 ">Skills</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary)] md:p-0 ">Projects</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary)] md:p-0 ">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- home section  -->
+
+    <div class="flex flex-col gap-10 ">
+      <div class="flex flex-col gap-4 ">
+        <p class="text-2xl mt-36 px-32">Hello , my name is</p>
+        <h1 class="text-7xl px-28">Aman saini</h1>
+        <p class="text-5xl px-28">I am UI Developer</p>
+      </div>
+      <div class="flex px-28">
+        <a href="#_"
+          class="relative inline-flex items-center justify-start inline-block px-12 py-5 overflow-hidden font-bold rounded-full group">
+          <span
+            class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+          <span
+            class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
+          <span
+            class="relative text-xl w-full text-left transition-colors duration-200 ease-in-out group-hover:text-gray-900">Hire
+            Me</span>
+          <span class="absolute inset-0 border-4 border-black rounded-full"></span>
+        </a>
+      </div>
+    </div>
+  </section class="bg-[url('1.png')] bg-cover bg-no-repeat h-screen">
+  <!-- about section -->
+  <section class="container mx-auto">
+    <div class="flex flex-col gap-16">
+      <div class="flex flex-col gap-2">
+        <p class="flex items-center justify-center mt-28 text-5xl">About me </p>
+        <h2 class="flex items-center justify-center  text-2xl ">___who i am___ </h2>
+      </div>
+
+      <div class="flex flex-col lg:flex-row justify-around items-center ">
+        <div class="">
+          <img src="img-4.my.jpg" alt="" class="md:h-[30rem] md:w-[30rem] h-[25rem] w-[25rem] rounded-full">
+        </div>
+
+        <div class="lg:w-1/2 flex flex-col  p-6 md:justify-center md:items-start gap-10 ">
+          <h2 class="text-3xl">I'm aman saini a Front-End Developer</h2>
+          <p class="text-[19px] ">and I am 18-years-old passionate and detail-oriented Front-End Developer
+            with a strong foundation in building responsive, user-friendly, and visually compelling websites. With a
+            deep
+            understanding of HTML, CSS, JavaScript, and modern front-end frameworks like tailwindcss and jquery!
+          </p>
+          <div class=" flex md:justify-end md:items-end">
+            <a href="#_"
+              class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+              <span
+                class="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"></span>
+              <span
+                class="relative px-8 py-4 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+                <span class="relative text-[19px] text-[var(--background)]">Download CV</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- service section -->
+  <section class=" container mx-auto">
+    <div class="flex flex-col gap-4">
+
+      <!-- heading -->
+
+      <div class=" flex flex-col gap-2 mt-12">
+        <p class="flex items-center justify-center text-5xl">My Services </p>
+        <h2 class="flex items-center justify-center  text-2xl ">___what i provide___ </h2>
+      </div>
+      <!-- first container -->
+
+      <div class="flex flex-col justify-center items-center gap-10 md:gap-4 md:flex-row md:justify-around mt-12   ">
+        <div
+          class="relative hover:scale-105 md:hover:scale-110 duration-300 transition-all hover:rotate-180 shadow-idk hover:-translate-y-4 md:hover:-translate-y-8 flex items-center justify-center flex-col  p-6 w-80  auto rounded-lg  bg-slate-900 text-white border-4 border-t-6 border-b-6 border-l-2 border-r-2 border-solid border-indigo-600 shadow-lg">
+          <img src="./web-developer-svgrepo-com.svg" alt="" class=" w-12 h-12 mb-2">
+          <h1 class="text-3xl font-bold text-center"> web <br> designing</h1>
+          <p class="mt-4 text-[19px]  text-center  ">
+            I am excited to bring<br> my creativity and skills to<br> the world of web development.
+            I am passionate about designing clean
+          </p>
+        </div>
+        <!-- second container -->
+
+        <div
+          class="relative p-6 w-80  h-[22rem] hover:scale-105 md:hover:scale-110 duration-300 transition-all shadow-idk hover:-translate-y-4 md:hover:-translate-y-8 h-auto flex items-center justify-center flex-col rounded-lg bg-slate-900 text-white border-4 border-t-6 border-b-6 border-l-2 border-r-2 border-solid border-indigo-600 shadow-lg">
+          <img src="./github-142-svgrepo-com.svg" alt="" class=" w-12 h-12 mb-2">
+          <h1 class="text-3xl font-bold text-center"> Github management</h1>
+          <p class="mt-4 text-[19px] text-center  ">
+            I offer version control and project management services on GitHub,
+            ensuring smooth collaboration and organized code repositories.
+          </p>
+        </div>
+        <!-- third container -->
+
+        <div
+          class="relative p-6 w-80  h-[21rem] rounded-lg bg-slate-900 text-white border-4 border-t-6 border-b-6 border-l-2 h-auto border-r-2 flex items-center justify-center flex-col hover:scale-105 md:hover:scale-110 duration-300 transition-all shadow-idk hover:-translate-y-4 md:hover:-translate-y-8 border-solid border-indigo-600 shadow-lg ">
+          <img src="./api-page-svgrepo-com.svg" alt="" class="w-12 h-12 mb-2">
+          <h1 class="text-3xl font-bold text-center"> API <br> integration</h1>
+          <p class="mt-4 text-[19px] text-center ">
+            I specialize in<br> connecting and integrating applications and
+            services<br> through APIs, enabling<br> data exchange and functionality
+            enhancement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skills section  -->
+  <section class="container mx-auto px-10 md:px-0">
+
+    <div class=" flex flex-col gap-2 ">
+      <p class="flex items-center justify-center mt-52 text-5xl">My Skills </p>
+      <h2 class="flex items-center justify-center  text-2xl ">___what i know___ </h2>
+    </div>
+
+
+    <div class="flex flex-col lg:flex-row justify-between lg:px-40 gap-12 lg:gap-40 items-center mt-28">
+      <div class=" justify-center items-center">
+        <div class="w-full flex flex-col gap-3  ">
+          <h1 class="  font-semibold text-2xl">My Different Types of skills</h1>
+          <p class="w-full text-[17px] text-gray-800">Since beginning my journey as a freelance developer nearly 1 month
+            ago, I’ve done remote work for agencies, consulted for startups,
+            and collaborated with talented people to create web products for both business and consumer use</p>
+        </div>
+        <div class=" flex flex-col gap-3 mt-4">
+          <p class=" text-[17px] text-gray-800"> I create successful responsive websites that are fast, easy to use,
+            and built with best practices. The main area of my expertise is front-end development,> HTML, CSS,
+            JS,<br>building small and medium web apps, custom plugins, features,<br> animations, and coding interactive
+            layouts.</p>
+          <p class="text-[17px] text-gray-800">I am a quick learner and collaborate closely with clients and teams to
+            create efficient, scalable,<br>and user-friendly solutions that meet their unique needs</p>
+          <p class="text-[17px] text-gray-800">Visit my Facebook page for more details contact me .</p>
+          <button
+            class=" text-[var(--text)] border-solid border-4 border-indigo-600 hover:bg-indigo-600 hover:text-[var(--background)] hover w-[10rem] mt-2 h-[3rem] rounded-md text-[18px] ">Learn
+            More</button>
+        </div>
+      </div>
+
+      <div class="md:mx-0 flex flex-col items-start w-full">
+        <div class="mb-4 flex flex-col justify-between w-full">
+          <div class="flex lg:gap-[24rem] justify-between text-black">
+            <span>HTML</span>
+            <span>90%</span>
+          </div>
+          <div class="h-2 w-full bg-gray-200 rounded-full mt-1">
+            <div class="h-2 bg-blue-800 rounded-full" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="mb-4 flex flex-col justify-between w-full">
+          <div class="flex lg:gap-[25rem] justify-between text-black">
+            <span>CSS</span>
+            <span class="">80%</span>
+          </div>
+          <div class="h-2 w-full bg-gray-200 rounded-full mt-1">
+            <div class="h-2 bg-blue-800 rounded-full" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="mb-4 flex flex-col justify-between w-full">
+          <div class="flex lg:gap-[22rem] justify-between text-black">
+            <span>JavaScript</span>
+            <span>70%</span>
+          </div>
+          <div class="h-2 w-full bg-gray-200 rounded-full mt-1">
+            <div class="h-2 bg-blue-800 rounded-full" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="container mx-auto">
+    <div class=" flex flex-col gap-2 ">
+      <h2 class="flex items-center justify-center text-5xl mt-40">My Projects</h2>
+      <p class="flex items-center justify-center text-sm md:text-2xl">___Explore some of my recent work below___</p>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-6 px-10 lg:p-20 mt-12 ">
+      <div
+        class="group py-10 md:py-0 flex flex-col text-[var(--text)] hover:text-[var(--background)] rounded-md bg-slate-900  items-center justify-center text-center  ">
+        <img src="./movie logo-2-Photoroom.png" alt=""
+          class="flex  object-cover  h-36 w-36 top-0 rounded-full border-solid border-4 border-slate-200 group-hover:border-indigo-800 group-hover:duration-500">
+
+        <h2 class="flex text-[20px] font-semibold text-white hover:text-white ">Movie Recomendation system</h2>
+        <p class="flex text-[15px] text-white hover:text-white ">This is a movie recommendation system to recommend
+          movies
+          based on their Genre or cataegory</p>
+
+        <a href="#_"
+          class="relative px-5 py-3   mt-4 overflow-hidden font-medium  bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+          <span
+            class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+          <span
+            class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+          <span
+            class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+          <span
+            class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+          <span
+            class="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+          <span class="relative transition-colors duration-300 delay-200 group-hover ease">View
+            Project</span>
+        </a>
+      </div>
+      <div
+        class=" flex items-center justify-center rounded-lg   border-4 bg-[var(--secondary)] text-[var(--text)] h-96 p-4 gap-8">
+
+
+        <div
+          class="group flex flex-col text-[var(--text)] hover:text-[var(--background)] items-center justify-center text-center  ">
+          <img src="my-icon.jpg" alt=""
+            class="flex   h-36 w-36 top-0 rounded-full border-solid border-4 border-slate-200 group-hover:border-indigo-300 group-hover:duration-500">
+
+          <h2 class="flex text-[20px] font-semibold  ">My Portfolio</h2>
+          <p class="flex text-[15px] ">This is my portfolio website created using HTML,CSS,JS
+            for more details visit my portfolio</p>
+
+          <a href="#_"
+            class="relative px-5 py-3 mt-4  overflow-hidden font-medium  bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+            <span
+              class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+            <span
+              class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+            <span
+              class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+            <span
+              class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+            <span
+              class="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+            <span class="relative transition-colors duration-300 delay-200 group-hover ease">View
+              Project</span>
+          </a>
+        </div>
+      </div>
+      <div
+        class=" flex items-center justify-center rounded-lg   border-4 bg-[var(--secondary)] text-[var(--text)] h-96 p-4 gap-8">
+
+
+        <div
+          class="group flex flex-col text-[var(--text)] hover:text-[var(--background)] items-center justify-center text-center  ">
+          <img src="e-commerce.avif" alt=""
+            class="flex object-cover  h-36 w-36 top-0 rounded-full border-solid border-4 border-slate-200 group-hover:border-indigo-300 group-hover:duration-500">
+
+          <h2 class="flex text-[20px] font-semibold ">E-Commerce Website</h2>
+          <p class="flex text-[15px]  ">This is an E-commerce website to buy and sell products
+            for more details visit my project</p>
+
+          <a href="#_"
+            class="relative px-5   py-3 mt-4 overflow-hidden font-medium  bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+            <span
+              class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+            <span
+              class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+            <span
+              class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+            <span
+              class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+            <span
+              class="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+            <span class="relative transition-colors duration-300 delay-200 group-hover ease">View
+              Project</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class=" flex flex-col gap-2 ">
+    <h2 class="flex items-center justify-center text-5xl mt-28">Contact Me</h2>
+    <p class="flex items-center justify-center text-2xl">___Get in touch___</p>
+  </div>
+
+  <div class="flex flex-col lg:flex-row px-10 lg:px-40 items-center gap-10 mt-20">
+    <div class="flex flex-col lg:w-1/2 gap-3   ">
+      <div class=" flex flex-col gap-2 ">
+        <h2 class="flex text-2xl font-semibold"> GET IN TOUCH</h2>
+        <p class="flex text-[18px]  text-gray-700  ">If you are interested in working together?
+          Please fill out the form <br>aside with some info about your project and I
+          will get back to you <br> as soon as I can. Please allow a couple days for me to respond.</p>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-user text-[var(--primary)] text-2xl "></i>
+        <div>
+          <h3 class="font-semibold text-[18px]">Name</h3>
+          <p class=" flex flex-row  text-[16px] text-gray-700">Aman Saini</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 pt-4  ">
+        <i class="fa-solid fa-location-dot text-[var(--primary)] text-2xl"></i>
+        <div>
+          <h3 class="font-semibold text-[18px]">Address</h3>
+          <p class=" flex flex-row  text-[16px] text-gray-700">Derabassi, punjab</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 pt-4  ">
+        <i class="fa-solid fa-envelope text-[var(--primary)] text-2xl "></i>
+        <div>
+          <h3 class="font-semibold text-[18px]">Email</h3>
+          <p class=" flex flex-row  text-[16px] text-gray-700">amansaini2537@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full lg:w-1/2">
+      <h2 class="flex text-2xl font-semibold">Message Me</h2>
+      <form class="flex flex-col gap-4 mt-4 w-full">
+        <div class="flex gap-4 w-full">
+          <input type="text" placeholder="Name" class="p-4 w-full  rounded-md border-2 border-gray-300">
+          <input type="email" placeholder="Email" class="p-4 w-full rounded-md border-2 border-gray-300">
+        </div>
+        <input type="text" placeholder="Subject" class="p-4 w-full  rounded-md border-2 border-gray-300">
+        <input type="text" placeholder="Message" class="p-4 w-full  rounded-md border-2 border-gray-300">
+        <a href="#_"
+          class="rounded-md flex  w-40 justify-center text-[var(--text)] hover:text-[var(--background)] items-center px-5 py-2 m-1 overflow-hidden relative group cursor-pointer border-4 font-medium border-indigo-600 ">
+          <span
+            class="absolute w-64 h-0 border-4 transition-all  duration-300   origin-center rotate-45 -translate-x-20 bg-indigo-600 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+          <span class="relative flex   transition duration-300  group-hover ease">Send
+            Message</span>
+        </a>
+    </div>
+  </div>
+
+  <footer class="bg-blue-200 mt-20">
+    <div class="flex flex-col gap-8  ">
+      <div class="">
+        <h2 class="flex items-center justify-center text-2xl lg:text-4xl mt-10">connect with me on (social media)</h2>
+      </div>
+      <div class="flex justify-center text-4xl gap-16">
+        <i
+          class="fa-brands fa-whatsapp text-green-700 hover:scale-105 transform hover:-translate-y-2 transition-all duration-300 "></i>
+        <i
+          class="fa-brands fa-instagram text-red-700 hover:scale-105 transform hover:-translate-y-2 transition-all duration-300"></i>
+        <i
+          class="fa-brands fa-linkedin text-blue-700 hover:scale-105 transform hover:-translate-y-2 transition-all duration-300"></i>
+        <i
+          class="fa-brands fa-github text-gray-700 hover:scale-105 transform hover:-translate-y-2 transition-all duration-300"></i>
+      </div>
+      <div>
+        <p class="flex items-center justify-center text-xl">|| Thanks To Visit Here ||</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
