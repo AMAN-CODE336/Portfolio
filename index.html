@@ -96,15 +96,33 @@
         </a>
 
 
+        <div class="flex md:hidden  ">
+        <button >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="menu"
+          class="fixed transform translate-x-full transition-all duration-1000 top-0 right-0 p-10 bg-gray-800 text-gray-200 flex flex-col gap-10 text-xl w-[70vw] h-screen">
+          <div class="text-2xl font-semibold">Portfolio</div>
+          <div class="flex flex-col gap-4">
+            <span>HOME</span>
+            <span>ABOUT</span>
+            <span>service</span>
+            <span>skills</span>
+            <span>projects</span>
+            <span>contact</span>
+          </div>
+        </nav>
+      </div>
+
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
             class="font-medium flex flex-col p-12 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  text-2xl ">
             <li>
-              <a href="#" class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent md:p-0 "
+              <a href="home" class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent md:p-0 "
                 aria-current="page">Home</a>
             </li>
             <li>
-              <a href="#"
+              <a href="about"
                 class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[var(--primary)] md:p-0 ">About</a>
             </li>
             <li>
@@ -131,13 +149,13 @@
 
     <div class="flex flex-col gap-10 ">
       <div class="flex flex-col gap-4 ">
-        <p class="text-2xl mt-36 px-32">Hello , my name is</p>
-        <h1 class="text-7xl px-28">Aman saini</h1>
-        <p class="text-5xl px-28">I am UI Developer</p>
+        <p class="text-2xl lg:mt-36 mt-56 px-20 lg:px-32">Hello , my name is</p>
+        <h1 class="lg:text-7xl text-5xl px-16 lg:px-28">Aman saini</h1>
+        <p class="lg:text-5xl text-3xl px-16 lg:px-28">I am UI Developer</p>
       </div>
-      <div class="flex px-28">
+      <div class="flex lg:px-28 px-16">
         <a href="#_"
-          class="relative inline-flex items-center justify-start inline-block px-12 py-5 overflow-hidden font-bold rounded-full group">
+          class="relative inline-flex items-center justify-start inline-block lg:px-12 lg:py-5 py-3 px-10   overflow-hidden font-bold rounded-full group">
           <span
             class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
           <span
@@ -149,9 +167,11 @@
         </a>
       </div>
     </div>
-  </section class="bg-[url('1.png')] bg-cover bg-no-repeat h-screen">
+  </section class="bg-[url('1.png')] bg-cover bg-no-repeat h-screen ">
+
+
   <!-- about section -->
-  <section class="container mx-auto">
+  <section id="about" class="container mx-auto">
     <div class="flex flex-col gap-16">
       <div class="flex flex-col gap-2">
         <p class="flex items-center justify-center mt-28 text-5xl">About me </p>
@@ -171,12 +191,13 @@
             understanding of HTML, CSS, JavaScript, and modern front-end frameworks like tailwindcss and jquery!
           </p>
           <div class=" flex md:justify-end md:items-end">
-            <a href="#_"
+            <a href="./1.png" download
               class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
               <span
                 class="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"></span>
               <span
                 class="relative px-8 py-4 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+
                 <span class="relative text-[19px] text-[var(--background)]">Download CV</span>
               </span>
             </a>
@@ -193,7 +214,7 @@
 
       <!-- heading -->
 
-      <div class=" flex flex-col gap-2 mt-12">
+      <div class=" flex flex-col gap-2 mt-24">
         <p class="flex items-center justify-center text-5xl">My Services </p>
         <h2 class="flex items-center justify-center  text-2xl ">___what i provide___ </h2>
       </div>
@@ -201,7 +222,7 @@
 
       <div class="flex flex-col justify-center items-center gap-10 md:gap-4 md:flex-row md:justify-around mt-12   ">
         <div
-          class="relative hover:scale-105 md:hover:scale-110 duration-300 transition-all hover:rotate-180 shadow-idk hover:-translate-y-4 md:hover:-translate-y-8 flex items-center justify-center flex-col  p-6 w-80  auto rounded-lg  bg-slate-900 text-white border-4 border-t-6 border-b-6 border-l-2 border-r-2 border-solid border-indigo-600 shadow-lg">
+          class="relative hover:scale-105 md:hover:scale-110 duration-300 transition-all  shadow-idk hover:-translate-y-4 md:hover:-translate-y-8 flex items-center justify-center flex-col  p-6 w-80  auto rounded-lg  bg-slate-900 text-white border-4 border-t-6 border-b-6 border-l-2 border-r-2 border-solid border-indigo-600 shadow-lg">
           <img src="./web-developer-svgrepo-com.svg" alt="" class=" w-12 h-12 mb-2">
           <h1 class="text-3xl font-bold text-center"> web <br> designing</h1>
           <p class="mt-4 text-[19px]  text-center  ">
@@ -307,11 +328,11 @@
       <p class="flex items-center justify-center text-sm md:text-2xl">___Explore some of my recent work below___</p>
     </div>
 
-    <div class="flex flex-col lg:flex-row gap-6 px-10 lg:p-20 mt-12 ">
+    <div class="flex flex-col lg:flex-row gap-16 px-10 lg:p-20 mt-12 ">
       <div
-        class="group py-10 md:py-0 flex flex-col text-[var(--text)] hover:text-[var(--background)] rounded-md bg-slate-900  items-center justify-center text-center  ">
+        class="group py-10 md:py-0 flex flex-col text-[var(--text)] hover:text-[var(--background)] rounded-md bg-slate-900 hover:scale-105 md:hover:scale-110 duration-300 transition-all  shadow-idk  border-4 border-t-6 border-b-6 border-l-2 border-r-2 border-solid border-indigo-600 shadow-lg  items-center justify-center text-center  ">
         <img src="./movie logo-2-Photoroom.png" alt=""
-          class="flex  object-cover  h-36 w-36 top-0 rounded-full border-solid border-4 border-slate-200 group-hover:border-indigo-800 group-hover:duration-500">
+          class="flex  object-cover  h-36 w-36 top-0 rounded-full border-solid border-4 border-slate-200 group-hover:border-indigo-800 group-hover:duration-200">
 
         <h2 class="flex text-[20px] font-semibold text-white hover:text-white ">Movie Recomendation system</h2>
         <p class="flex text-[15px] text-white hover:text-white ">This is a movie recommendation system to recommend
@@ -335,16 +356,16 @@
         </a>
       </div>
       <div
-        class=" flex items-center justify-center rounded-lg   border-4 bg-[var(--secondary)] text-[var(--text)] h-96 p-4 gap-8">
+        class=" flex items-center justify-center rounded-lg   border-4 bg-[var(--secondary)] text-[var(--text)] h-96 p-4 bg-slate-900 hover:scale-105 md:hover:scale-110 duration-300 transition-all  shadow-idk  border-4 border-t-6 border-b-6 border-l-2 border-r-2 border-solid border-indigo-600 shadow-lg gap-8">
 
 
         <div
-          class="group flex flex-col text-[var(--text)] hover:text-[var(--background)] items-center justify-center text-center  ">
+          class="group flex flex-col text-[var(--text)] hover:text-[var(--background)] items-center justify-center text-center   ">
           <img src="my-icon.jpg" alt=""
-            class="flex   h-36 w-36 top-0 rounded-full border-solid border-4 border-slate-200 group-hover:border-indigo-300 group-hover:duration-500">
+            class="flex   h-36 w-36 top-0 rounded-full border-solid border-4 border-slate-200 group-hover:border-indigo-800 group-hover:duration-200">
 
-          <h2 class="flex text-[20px] font-semibold  ">My Portfolio</h2>
-          <p class="flex text-[15px] ">This is my portfolio website created using HTML,CSS,JS
+          <h2 class="flex text-[20px] font-semibold text-white hover:text-white  ">My Portfolio</h2>
+          <p class="flex text-[15px] text-white hover:text-white ">This is my portfolio website created using HTML,CSS,JS
             for more details visit my portfolio</p>
 
           <a href="#_"
@@ -365,16 +386,16 @@
         </div>
       </div>
       <div
-        class=" flex items-center justify-center rounded-lg   border-4 bg-[var(--secondary)] text-[var(--text)] h-96 p-4 gap-8">
+        class=" flex items-center justify-center rounded-lg   border-4 bg-[var(--secondary)] text-[var(--text)] h-96 p-4 bg-slate-900 hover:scale-105 md:hover:scale-110 duration-300 transition-all  shadow-idk  border-4 border-t-6 border-b-6 border-l-2 border-r-2 border-solid border-indigo-600 shadow-lg gap-8">
 
 
         <div
           class="group flex flex-col text-[var(--text)] hover:text-[var(--background)] items-center justify-center text-center  ">
           <img src="e-commerce.avif" alt=""
-            class="flex object-cover  h-36 w-36 top-0 rounded-full border-solid border-4 border-slate-200 group-hover:border-indigo-300 group-hover:duration-500">
+            class="flex object-cover  h-36 w-36 top-0 rounded-full border-solid border-4 border-slate-200 group-hover:border-indigo-900 group-hover:duration-200">
 
-          <h2 class="flex text-[20px] font-semibold ">E-Commerce Website</h2>
-          <p class="flex text-[15px]  ">This is an E-commerce website to buy and sell products
+          <h2 class="flex text-[20px] font-semibold text-white hover:text-white">E-Commerce Website</h2>
+          <p class="flex text-[15px] text-white hover:text-white ">This is an E-commerce website to buy and sell products
             for more details visit my project</p>
 
           <a href="#_"
@@ -457,7 +478,7 @@
   <footer class="bg-blue-200 mt-20">
     <div class="flex flex-col gap-8  ">
       <div class="">
-        <h2 class="flex items-center justify-center text-2xl lg:text-4xl mt-10">connect with me on (social media)</h2>
+        <h2 class="flex items-center justify-center text-xl lg:text-4xl mt-10">connect with me on (social media)</h2>
       </div>
       <div class="flex justify-center text-4xl gap-16">
         <i
@@ -474,6 +495,12 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    document.querySelector("button").addEventListener("click", function () {
+      document.querySelector("#menu").classList.remove("translate-x-full")
+    })
+  </script>
 </body>
 
 </html>
