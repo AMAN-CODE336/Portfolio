@@ -534,11 +534,11 @@
   <script>
     document.querySelector("button").addEventListener("click", function () {
       document.querySelector("#menu").classList.remove("translate-x-full")
-      // document.querySelector("#close").classList.add("translate-x-0")
+     
       
-      document.querySelector("button").addEventListener("click", function () {
-        document.querySelector("#close").classList.add("translate-x-full")
-        // document.querySelector("#close").classList.remove("translate-x-0")
+      document.querySelector("#close").addEventListener("click", function () {
+        document.querySelector("#menu").classList.add("translate-x-full")
+       
       })
     })
 
